@@ -58,6 +58,9 @@ nav li a {
     text-decoration: none;
     color: #3C354F;
 }
+.nav-title .nav-first-letter{
+    color: #F948B2;
+}
 
 .follow-icon {
     border-radius: 8px;
@@ -72,6 +75,8 @@ nav li a {
 .banner-container {
     display: flex;
     background: #FFF;
+    padding: 0 240px 0 240px;
+    align-items: center;
 }
 
 .banner-title {
@@ -80,6 +85,7 @@ nav li a {
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
+    gap: 5px;
 }
 
 .banner-name {
@@ -91,6 +97,7 @@ nav li a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    gap: 5px;
 }
 
 .left-btn {
@@ -117,10 +124,23 @@ nav li a {
 }
 .banner-content{
     height: 100%;
-    width: 50%;
+    
 }
 
 .banner-container img{
     height: 100%;
-    width: 50%;
+    width: 100%;
+    margin: 1px 0 20px;
+    padding-left: 40px;
+}
+
+
+@media  screen and (max-width: 576px) (and max-width: 960px) {
+   header{
+    padding: 20px;
+   }
+   nav{
+    flex-direction: column;
+   }
+   
 }
